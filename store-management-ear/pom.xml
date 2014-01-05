@@ -22,6 +22,8 @@
          <artifactId>store-management-web</artifactId>
          <type>war</type>
       </dependency>
+	  
+	  
       <dependency>
          <groupId>com.pos</groupId>
          <artifactId>store-management-ejb</artifactId>
