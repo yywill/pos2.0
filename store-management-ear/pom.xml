@@ -24,6 +24,13 @@
       </dependency>
 	  
 	  
+      <!-- Depend on the ejb module and war so that we can package them -->
+      <dependency>
+         <groupId>com.pos</groupId>
+         <artifactId>webgateway</artifactId>
+         <type>war</type>
+      </dependency>
+	  
       <dependency>
          <groupId>com.pos</groupId>
          <artifactId>store-management-ejb</artifactId>

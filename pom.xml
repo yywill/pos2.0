@@ -11,6 +11,7 @@
    <modules>
       <module>store-management-ejb</module>
       <module>store-management-web</module>
+	  <module>webgateway</module>
       <module>store-management-ear</module>
 	 
    </modules>
@@ -37,6 +38,14 @@
          <dependency>
             <groupId>com.pos</groupId>
             <artifactId>store-management-web</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>war</type>
+            <scope>compile</scope>
+         </dependency>
+		 
+		<dependency>
+            <groupId>com.pos</groupId>
+            <artifactId>webgateway</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>war</type>
             <scope>compile</scope>
