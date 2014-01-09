@@ -1,0 +1,41 @@
+#content {
+  /* margin-left:  20%; */
+}
+#navbar {
+ /*  float: left;
+  width: 20%; */
+}
+
+#container {
+  width: 800px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+#content {
+  /* margin-left:  200px; */
+}
+
+/* #navbar {
+  float: left;
+  width: 200px;
+} */
+
+#footer {
+	clear:both;
+	text-align: center ;
+}
+
+#header {
+	text-align: center ;
+}
+
+
+
+.colPanel{
+  vertical-align: top;
+  width: 800px ;
+  margin-left: auto ;
+  margin-right: auto ;
+	
+}
