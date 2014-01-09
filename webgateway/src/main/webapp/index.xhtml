@@ -16,7 +16,7 @@
         <h:panelGrid columns="2" columnClasses="cols,colPanel" width="400">
             <rich:panelMenu style="width:200px" itemMode="ajax" groupMode="ajax" groupExpandedLeftIcon="triangleUp"
                 groupCollapsedLeftIcon="triangleDown" topGroupExpandedRightIcon="chevronUp"
-                topGroupCollapsedRightIcon="chevronDown" itemLeftIcon="disc" itemChangeListener="#{panelMenuBean.updateCurrent}">
+                topGroupCollapsedRightIcon="chevronDown" itemLeftIcon="disc" itemChangeListener="#{richBean.updateCurrent}">
                 <rich:panelMenuGroup label="Group 1">
                     <rich:panelMenuItem label="Item 1.1" name="Item_1_1" />
                     <rich:panelMenuItem label="Item 1.2" name="Item_1_2" />
@@ -34,14 +34,16 @@
                     <rich:panelMenuItem label="Item 2.5" name="Item_2_5" />
                 </rich:panelMenuGroup>
                 <rich:panelMenuGroup label="Group 3">
-                    <rich:panelMenuItem label="Item 3.1" name="Item_3_1" />
+                    <rich:panelMenuItem label="Item 3.1" name="Item_3_1" >
+                    <f:param name="current" value="Item 3.1"/>
+                    </rich:panelMenuItem>
                     <rich:panelMenuItem label="Item 3.2" name="Item_3_2" />
                     <rich:panelMenuItem label="Item 3.3" name="Item_3_3" />
                 </rich:panelMenuGroup>
             </rich:panelMenu>
             <a4j:outputPanel ajaxRendered="true" >
-                <rich:panel rendered="#{not empty panelMenuBean.current}">
-                    <h:outputText value="#{panelMenuBean.current} selected" id="current" />
+                <rich:panel rendered="#{not empty richBean.current}">
+                    <h:outputText value="#{richBean.current} selected" id="current" />
                 </rich:panel>
             </a4j:outputPanel>
         </h:panelGrid>
