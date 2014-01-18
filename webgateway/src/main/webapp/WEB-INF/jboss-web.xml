@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://github.com/jboss/metadata/blob/master/web/src/main/resources/schema/jboss-web_7_1.xsd">  
+    <security-domain>java:/jaas/pos</security-domain>  
+    
+</jboss-web> 

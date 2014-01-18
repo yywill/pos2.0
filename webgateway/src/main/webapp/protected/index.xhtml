@@ -9,8 +9,8 @@
 <body>
     <ui:composition template="/templates/template.xhtml">
 
-        <ui:define name="header">Store Mangement</ui:define>
-<ui:define name="footer">Copyright</ui:define>
+        <ui:define name="header">Store Mangement  <h:outputText value="#{param['RemoteUser']}" /> 欢迎回来 </ui:define>
+        <ui:define name="footer">Copyright</ui:define>
         <ui:define name="content">
         	        <h:form id="form">
         <h:panelGrid columns="2" columnClasses="cols,colPanel" width="400">
