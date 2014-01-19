@@ -14,15 +14,17 @@ CREATE TABLE if not exists hz_user_roles (
     user_role VARCHAR(32)
 );
 
-insert  hz_users (username, passwd) values ('admin',MD5('Welcome1'));
-insert  hz_users (username, passwd) values ('operation',MD5('Welcome1'));
-insert  hz_users (username, passwd) values ('sales',MD5('Welcome1'));
-insert  hz_users (username, passwd) values ('hr',MD5('Welcome1'));
+#密码为 Welcome1 加密后存入数据库
+#密码生成方法为 登录linux服务器 echo -n "Welcome1" | openssl dgst -md5 -binary | openssl base64
+insert  hz_users (username, passwd) values ('admin','tW4LTqSWIoO+52JSXC1JDw==');
+insert  hz_users (username, passwd) values ('operation','tW4LTqSWIoO+52JSXC1JDw==');
+insert  hz_users (username, passwd) values ('sales','tW4LTqSWIoO+52JSXC1JDw==');
+insert  hz_users (username, passwd) values ('hr','tW4LTqSWIoO+52JSXC1JDw==');
 
 update hz_users set uuid = uuid() where user_id<5;
-update hz_users set passwd = 'Welcome1' where user_id<5;
+update hz_users set passwd ='tW4LTqSWIoO+52JSXC1JDw==' where user_id<5;
 
-#debug
+#debug'b56e0b4ea4962283bee762525c2d490f'
 #select * from hz_users;
 #select * from hz_user_roles;
 
